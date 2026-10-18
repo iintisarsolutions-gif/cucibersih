@@ -1,0 +1,1894 @@
+<!DOCTYPE html>
+<html lang="ms" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUCI BERSIH | Servis Cuci Kusyen, Sofa & Kereta</title>
+    <meta name="description" content="Tempah servis cuci kerusi kereta, karpet, sofa dan tilam bersama CUCI BERSIH. Servis bergerak dengan harga bermula RM50. Hubungi kami untuk semakan slot dan harga.">
+    <meta name="theme-color" content="#087FE8">
+
+    <!-- Favicon (Ganti favicon.ico dengan nama fail ikon anda) -->
+    <link rel="icon" href="logo.png" type="image/png">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="CUCI BERSIH | Servis Cuci Kusyen, Sofa & Kereta">
+    <meta property="og:description" content="Servis cuci kusyen bergerak terus ke rumah anda. Bersih, selesa dan mudah.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://iintisarsolutions-gif.github.io/SAProtondemo/">
+    <meta property="og:image" content="https://iintisarsolutions-gif.github.io/SAProtondemo/Aliya1.jpeg">
+
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #087FE8;
+            --primary-hover: #0665bd;
+            --secondary: #25B9F3;
+            --dark-navy: #102A43;
+            --bg-color: #F4FAFF;
+            --white: #FFFFFF;
+            --text-color: #243B53;
+            --text-muted: #627D98;
+            --accent-cta: #16A34A;
+            --accent-cta-hover: #15803d;
+            --border-color: #bcccdc;
+            --shadow-sm: 0 1px 3px rgba(16, 42, 67, 0.08);
+            --shadow-md: 0 4px 12px rgba(16, 42, 67, 0.1);
+            --shadow-lg: 0 10px 25px rgba(16, 42, 67, 0.15);
+            --radius: 12px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Utility Classes */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.75rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: var(--radius);
+            cursor: pointer;
+            border: none;
+            transition: var(--transition);
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--white);
+            box-shadow: 0 4px 14px rgba(8, 127, 232, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-whatsapp {
+            background-color: var(--accent-cta);
+            color: var(--white);
+            box-shadow: 0 4px 14px rgba(22, 163, 74, 0.3);
+        }
+
+        .btn-whatsapp:hover {
+            background-color: var(--accent-cta-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(8, 127, 232, 0.05);
+            transform: translateY(-2px);
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3.5rem auto;
+        }
+
+        .section-header h2 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: var(--dark-navy);
+            margin-bottom: 1rem;
+            letter-spacing: -0.025em;
+        }
+
+        .section-header p {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--white);
+            box-shadow: var(--shadow-sm);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--dark-navy);
+        }
+
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.25rem;
+            box-shadow: 0 4px 10px rgba(8, 127, 232, 0.25);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--dark-navy);
+            cursor: pointer;
+        }
+
+        .hero {
+            position: relative;
+            padding: 160px 0 100px 0;
+            background: linear-gradient(rgba(16, 42, 67, 0.75), rgba(16, 42, 67, 0.85)), url('image.jpeg') no-repeat center center/cover;
+            color: var(--white);
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content .eyebrow {
+            display: inline-block;
+            background-color: rgba(37, 185, 243, 0.2);
+            color: var(--secondary);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.25rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-content p {
+            font-size: 1.125rem;
+            color: #d9e2ec;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .hero-highlights {
+            display: flex;
+            flex-direction: column;
+            gap: 0.875rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-highlight-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #f0f4f8;
+        }
+
+        .hero-highlight-item i {
+            color: var(--secondary);
+            font-size: 1.2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-card-preview {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .hero-card-preview h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero-card-preview p {
+            color: #d9e2ec;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .preview-features {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .preview-feature-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 0.875rem 1rem;
+            border-radius: 10px;
+        }
+
+        .preview-feature-item i {
+            font-size: 1.25rem;
+            color: var(--secondary);
+        }
+
+        .problems {
+            padding: 100px 0;
+            background-color: var(--white);
+        }
+
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .problem-card {
+            background-color: var(--bg-color);
+            padding: 2.5rem 2rem;
+            border-radius: var(--radius);
+            border-left: 4px solid var(--primary);
+            transition: var(--transition);
+        }
+
+        .problem-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .problem-card i {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1.25rem;
+        }
+
+        .problem-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--dark-navy);
+            margin-bottom: 0.75rem;
+        }
+
+        .problem-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .problems-conclusion {
+            background: linear-gradient(135deg, #102A43, #243B53);
+            color: var(--white);
+            padding: 2.5rem;
+            border-radius: var(--radius);
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+            box-shadow: var(--shadow-md);
+        }
+
+        .problems-conclusion p {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #f0f4f8;
+        }
+
+        .services {
+            padding: 100px 0;
+            background-color: var(--bg-color);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .service-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            transition: var(--transition);
+            border: 1px solid #e2e8f0;
+            position: relative;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary);
+        }
+
+        .service-header-bg {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .service-header-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, transparent 40%, rgba(16, 42, 67, 0.85));
+            display: flex;
+            align-items: flex-end;
+            padding: 1.5rem;
+        }
+
+        .service-header-overlay h3 {
+            color: var(--white);
+            font-size: 1.35rem;
+            font-weight: 700;
+        }
+
+        .service-body {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .service-price {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .service-price span {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+
+        .service-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .service-features {
+            list-style: none;
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .service-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            font-size: 0.925rem;
+            color: var(--text-color);
+        }
+
+        .service-features li i {
+            color: var(--accent-cta);
+            margin-top: 0.2rem;
+        }
+
+        .service-note {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            background-color: var(--bg-color);
+            padding: 0.75rem;
+            border-radius: 8px;
+        }
+
+        .features {
+            padding: 100px 0;
+            background-color: var(--white);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-box {
+            background-color: var(--bg-color);
+            padding: 2.5rem 2rem;
+            border-radius: var(--radius);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            background-color: var(--white);
+        }
+
+        .feature-icon-wrap {
+            width: 70px;
+            height: 70px;
+            background: rgba(8, 127, 232, 0.1);
+            color: var(--primary);
+            font-size: 1.75rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem auto;
+            transition: var(--transition);
+        }
+
+        .feature-box:hover .feature-icon-wrap {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .feature-box h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--dark-navy);
+            margin-bottom: 0.75rem;
+        }
+
+        .feature-box p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .process {
+            padding: 100px 0;
+            background-color: var(--bg-color);
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            position: relative;
+        }
+
+        .process-step {
+            background-color: var(--white);
+            padding: 2.5rem 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            text-align: center;
+            border-top: 4px solid var(--primary);
+        }
+
+        .step-number {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary);
+            color: var(--white);
+            font-weight: 800;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 10px rgba(8, 127, 232, 0.3);
+        }
+
+        .process-step h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--dark-navy);
+            margin: 1rem 0 0.75rem 0;
+        }
+
+        .process-step p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .gallery {
+            padding: 100px 0;
+            background-color: var(--white);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius);
+            overflow: hidden;
+            height: 280px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(16, 42, 67, 0.85), transparent 70%);
+            display: flex;
+            align-items: flex-end;
+            padding: 1.5rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay h4 {
+            color: var(--white);
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        .cta-banner {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white);
+            text-align: center;
+        }
+
+        .cta-banner-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-banner h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            letter-spacing: -0.025em;
+        }
+
+        .cta-banner p {
+            font-size: 1.15rem;
+            margin-bottom: 2.5rem;
+            color: #f0f4f8;
+        }
+
+        .cta-banner-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .faq {
+            padding: 100px 0;
+            background-color: var(--bg-color);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .faq-item {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 1.25rem 1.5rem;
+            background: none;
+            border: none;
+            text-align: left;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--dark-navy);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .faq-question:hover {
+            color: var(--primary);
+        }
+
+        .faq-question i {
+            transition: transform 0.3s ease;
+            color: var(--primary);
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+            padding: 0 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+            padding: 0 1.5rem 1.25rem 1.5rem;
+        }
+
+        footer {
+            background-color: var(--dark-navy);
+            color: #d9e2ec;
+            padding: 80px 0 30px 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+        }
+
+        .footer-col p {
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            color: #9fb3c8;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #9fb3c8;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 0.875rem;
+            color: #829ab1;
+        }
+
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+            z-index: 999;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .floating-whatsapp:hover {
+            transform: scale(1.1);
+            background-color: #20ba5a;
+        }
+
+        .floating-whatsapp .tooltip {
+            position: absolute;
+            right: 75px;
+            background-color: var(--dark-navy);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            white-space: nowrap;
+            box-shadow: var(--shadow-sm);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .floating-whatsapp:hover .tooltip {
+            opacity: 1;
+        }
+
+        .mobile-sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--white);
+            box-shadow: 0 -4px 15px rgba(16, 42, 67, 0.1);
+            padding: 0.75rem 1.5rem;
+            z-index: 998;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .mobile-sticky-info .price-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .mobile-sticky-info .price-val {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background-color: rgba(16, 42, 67, 0.7);
+            backdrop-filter: blur(5px);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-container {
+            background-color: var(--white);
+            width: 100%;
+            max-width: 650px;
+            max-height: 90vh;
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            transform: scale(0.95);
+            transition: transform 0.3s ease;
+        }
+
+        .modal-overlay.active .modal-container {
+            transform: scale(1);
+        }
+
+        .modal-header {
+            padding: 1.5rem;
+            background-color: var(--dark-navy);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .modal-header h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.25rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .modal-close:hover {
+            color: var(--secondary);
+        }
+
+        .modal-body {
+            padding: 1.5rem;
+            overflow-y: auto;
+            flex-grow: 1;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--dark-navy);
+            margin-bottom: 0.5rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            font-size: 0.95rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            transition: var(--transition);
+            background-color: #fafbfc;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            background-color: var(--white);
+            box-shadow: 0 0 0 3px rgba(8, 127, 232, 0.15);
+        }
+
+        .error-msg {
+            font-size: 0.8rem;
+            color: #dc2626;
+            margin-top: 0.3rem;
+            display: none;
+        }
+
+        .form-control.error {
+            border-color: #dc2626;
+        }
+
+        .form-control.error + .error-msg {
+            display: block;
+        }
+
+        .modal-footer {
+            padding: 1.25rem 1.5rem;
+            background-color: var(--bg-color);
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 992px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: var(--white);
+                flex-direction: column;
+                padding: 1.5rem;
+                box-shadow: var(--shadow-md);
+                border-top: 1px solid #e2e8f0;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hamburger {
+                display: block;
+            }
+            .hero {
+                padding: 140px 0 80px 0;
+            }
+            .hero-content h1 {
+                font-size: 2.1rem;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            .mobile-sticky-cta {
+                display: flex;
+            }
+            body {
+                padding-bottom: 75px;
+            }
+            .floating-whatsapp {
+                bottom: 95px;
+                right: 20px;
+            }
+        }
+
+        .custom-logo {
+            height: 45px;          /* Mengunci tinggi logo agar pas di header */
+            width: auto;           /* Menjaga proporsi gambar */
+            max-width: 100%;       /* Mencegah logo meluap */
+            object-fit: contain;   /* Memastikan gambar tampil utuh */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="navbar">
+        <div class="container nav-container">
+            <a href="#utama" class="logo">
+                <!-- Gantikan div logo-icon dengan tag img -->
+                <img src="logo.png" alt="Logo Cuci Bersih" class="custom-logo">
+                <span>CUCI BERSIH</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#utama" onclick="closeMenu()">Utama</a></li>
+                <li><a href="#servis" onclick="closeMenu()">Servis</a></li>
+                <li><a href="#pakej" onclick="closeMenu()">Pakej & Harga</a></li>
+                <li><a href="#kelebihan" onclick="closeMenu()">Kelebihan</a></li>
+                <li><a href="#faq" onclick="closeMenu()">FAQ</a></li>
+                <li><button class="btn btn-primary" onclick="openModal('Cuci Bersih', 'Sofa & Mattress'); closeMenu();">Tempah Sekarang</button></li>
+            </ul>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section id="utama" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="eyebrow">SERVIS CUCI KUSYEN BERGERAK</span>
+                <h1>Kusyen, Sofa & Kerusi Kereta Lebih Bersih Tanpa Perlu Keluar Rumah.</h1>
+                <p>CUCI BERSIH datang terus ke lokasi anda untuk membersihkan sofa, tilam dan kerusi kereta. Anda boleh berehat di rumah sementara kami menguruskan kerja pembersihan.</p>
+                <div class="hero-highlights">
+                    <div class="hero-highlight-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Servis door-to-door terus ke lokasi anda.</span>
+                    </div>
+                    <div class="hero-highlight-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Anggaran masa kerja 1–2 jam, bergantung pada jenis dan keadaan cucian.</span>
+                    </div>
+                    <div class="hero-highlight-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Harga bermula serendah RM50 bagi servis sofa dan tilam yang layak.</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-whatsapp" onclick="openModal('Cuci Bersih', 'Sofa & Mattress')">
+                        <i class="fa-solid fa-calendar-check"></i> Tempah Cucian Sekarang
+                    </button>
+                    <a href="#pakej" class="btn btn-secondary" style="color: var(--white); border-color: var(--white);">
+                        Lihat Pakej & Harga <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-card-preview">
+                <h3>Kenapa Pilih Cuci Bersih?</h3>
+                <p>Penyelesaian pembersihan profesional mudah alih di Malaysia.</p>
+                <div class="preview-features">
+                    <div class="preview-feature-item">
+                        <i class="fa-solid fa-van-shuttle"></i>
+                        <div>
+                            <strong>Peralatan Moden</strong>
+                            <div style="font-size: 0.85rem; color: #d9e2ec;">Mesin extractor upholstery khusus untuk fabrik.</div>
+                        </div>
+                    </div>
+                    <div class="preview-feature-item">
+                        <i class="fa-solid fa-shield-heart"></i>
+                        <div>
+                            <strong>Bahan Selamat</strong>
+                            <div style="font-size: 0.85rem; color: #d9e2ec;">Syampu berkualiti tinggi yang mesra fabrik dan kulit.</div>
+                        </div>
+                    </div>
+                    <div class="preview-feature-item">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <div>
+                            <strong>Jimat Tenaga & Masa</strong>
+                            <div style="font-size: 0.85rem; color: #d9e2ec;">Tak perlu angkat perabot berat ke kedai.</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary" style="width: 100%;" onclick="openModal('Cuci Bersih', 'Car Seat')">
+                    Semak Slot Hari Ini
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="masalah" class="problems">
+        <div class="container">
+            <div class="section-header">
+                <h2>Perabot dan Kerusi Kegunaan Harian Perlukan Penjagaan Yang Betul.</h2>
+                <p>Adakah anda menghadapi masalah seperti di bawah?</p>
+            </div>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <i class="fa-solid fa-car-burst"></i>
+                    <h3>Kotoran & Habuk Kenderaan</h3>
+                    <p>Kerusi kereta dan karpet mudah mengumpul habuk, tumpahan minuman serta kotoran harian.</p>
+                </div>
+                <div class="problem-card">
+                    <i class="fa-solid fa-couch"></i>
+                    <h3>Sofa & Tilam Kusam</h3>
+                    <p>Sofa dan tilam digunakan setiap hari dan memerlukan pembersihan berkala untuk kesegaran optimum.</p>
+                </div>
+                <div class="problem-card">
+                    <i class="fa-solid fa-business-time"></i>
+                    <h3>Kekangan Masa</h3>
+                    <p>Sukar mencari masa untuk menghantar barang atau perabot besar ke kedai cucian konvensional.</p>
+                </div>
+                <div class="problem-card">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h3>Peralatan Tidak Sesuai</h3>
+                    <p>Membersihkan sendiri tanpa mesin penyedut air tekanan tinggi boleh meninggalkan kesan lembap dan bau.</p>
+                </div>
+            </div>
+            <div class="problems-conclusion">
+                <p>Dengan CUCI BERSIH, anda boleh mendapatkan servis cucian di lokasi pilihan tanpa perlu bersusah payah menguruskan semuanya sendiri.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pakej" class="services">
+        <div class="container">
+            <div class="section-header" id="servis">
+                <h2>Pilih Servis Cucian Yang Anda Perlukan</h2>
+                <p>Pilihan cucian untuk kereta, sofa dan tilam — kami datang ke lokasi anda.</p>
+            </div>
+            <div class="services-grid">
+                <!-- Package 1 -->
+                <div class="service-card">
+                    <div class="service-header-bg" style="background-image: url('cuci3.jpeg');">
+                        <div class="service-header-overlay">
+                            <h3>Car Seat Deep Cleaning</h3>
+                        </div>
+                    </div>
+                    <div class="service-body">
+                        <div class="service-price">RM180 <span>/ bermula</span></div>
+                        <p class="service-desc">Pembersihan mendalam tempat duduk kereta untuk membantu menanggalkan kotoran pada permukaan fabrik atau kulit mengikut kesesuaian bahan.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Deep vacuum seat.</li>
+                            <li><i class="fa-solid fa-check"></i> Fabric seat shampoo.</li>
+                            <li><i class="fa-solid fa-check"></i> Leather seat shampoo (jika berkaitan).</li>
+                            <li><i class="fa-solid fa-check"></i> Scent finishing yang segar.</li>
+                        </ul>
+                        <div class="service-note">Nota: Harga akhir bergantung pada jenis kenderaan, keadaan tempat duduk dan skop kerja.</div>
+                        <button class="btn btn-primary" onclick="openModal('Car Seat Deep Cleaning', 'Car Seat', 180)">
+                            Pilih Cucian Kerusi Kereta
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="service-card">
+                    <div class="service-header-bg" style="background-image: url('cuci4.jpeg');">
+                        <div class="service-header-overlay">
+                            <h3>Car Carpet Deep Cleaning</h3>
+                        </div>
+                    </div>
+                    <div class="service-body">
+                        <div class="service-price">RM180 <span>/ bermula</span></div>
+                        <p class="service-desc">Pembersihan karpet kereta untuk membantu mengangkat habuk dan kotoran yang terkumpul.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Deep vacuum carpet keseluruhan.</li>
+                            <li><i class="fa-solid fa-check"></i> Bahagian bonnet termasuk ruang simpanan.</li>
+                            <li><i class="fa-solid fa-check"></i> Fabric carpet shampoo.</li>
+                            <li><i class="fa-solid fa-check"></i> Scent finishing.</li>
+                        </ul>
+                        <div class="service-note">Nota: Harga akhir bergantung pada jenis kenderaan & tahap kekotoran.</div>
+                        <button class="btn btn-primary" onclick="openModal('Car Carpet Deep Cleaning', 'Car Carpet', 180)">
+                            Pilih Cucian Karpet Kereta
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="service-card">
+                    <div class="service-header-bg" style="background-image: url('cuci5.jpeg');">
+                        <div class="service-header-overlay">
+                            <h3>Sofa & Mattress Deep Cleaning</h3>
+                        </div>
+                    </div>
+                    <div class="service-body">
+                        <div class="service-price">RM50 <span>/ bermula</span></div>
+                        <p class="service-desc">Segarkan semula sofa dan tilam anda dengan servis pembersihan di lokasi pilihan.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Deep vacuum sofa atau tilam.</li>
+                            <li><i class="fa-solid fa-check"></i> Fabric shampoo mengikut kesesuaian bahan.</li>
+                            <li><i class="fa-solid fa-check"></i> Rawatan bau dan penyegar.</li>
+                            <li><i class="fa-solid fa-check"></i> Servis terus di rumah anda.</li>
+                        </ul>
+                        <div class="service-note">Nota: Harga bermula RM50. Borang memerlukan maklumat saiz, kuantiti dan jenis cucian untuk pengesahan harga.</div>
+                        <button class="btn btn-primary" onclick="openModal('Sofa & Mattress Deep Cleaning', 'Sofa & Mattress', 50)">
+                            Pilih Cucian Sofa & Tilam
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kelebihan" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mengapa Pilih CUCI BERSIH?</h2>
+                <p>Komitmen kami terhadap kualiti dan kepuasan pelanggan.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon-wrap">
+                        <i class="fa-solid fa-house-chimney-user"></i>
+                    </div>
+                    <h3>Door-to-Door Service</h3>
+                    <p>Kami datang ke lokasi anda mengikut kawasan liputan dan slot yang tersedia.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon-wrap">
+                        <i class="fa-solid fa-stopwatch"></i>
+                    </div>
+                    <h3>Jimat Masa</h3>
+                    <p>Anggaran tempoh kerja sekitar 1–2 jam, bergantung pada jenis servis dan keadaan cucian.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon-wrap">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3>Pilihan Servis Pelbagai</h3>
+                    <p>Pilih cucian tempat duduk kereta, karpet kereta, sofa atau tilam mengikut keperluan.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon-wrap">
+                        <i class="fa-solid fa-tag"></i>
+                    </div>
+                    <h3>Harga Jelas</h3>
+                    <p>Ketahui harga permulaan sebelum menghantar permintaan tempahan kepada pasukan kami.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tempah Servis Dalam 3 Langkah Mudah</h2>
+                <p>Prosedur tempahan yang pantas dan mesra pelanggan.</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Pilih Cucian</h3>
+                    <p>Pilih servis yang anda perlukan dan lengkapkan butiran borang tempahan.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Hantar Permintaan</h3>
+                    <p>Hantar butiran tempahan kepada pasukan CUCI BERSIH melalui WhatsApp.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Sahkan Slot</h3>
+                    <p>Bincangkan harga akhir, lokasi, tarikh dan masa dengan pihak servis kami.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hasil Kerja Kami</h2>
+                <p>Kualiti kerja pembersihan profesional untuk keselesaan ruang anda.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="cuci.jpeg" alt="Pembersihan kerusi kereta" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Pembersihan Kerusi Kereta</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="cuci6.jpeg" alt="Pembersihan karpet kereta" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Pembersihan Karpet Kereta</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="cuci1.png" alt="Pembersihan sofa" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Pembersihan Sofa Ruang Tamu</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="cuci2.jpeg" alt="Pembersihan tilam" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Pembersihan Tilam / Mattress</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="container cta-banner-content">
+            <h2>Bersedia Untuk Ruang Yang Lebih Bersih?</h2>
+            <p>Pilih servis cucian yang sesuai dan hubungi CUCI BERSIH untuk menyemak slot serta harga mengikut keperluan anda.</p>
+            <div class="cta-banner-buttons">
+                <button class="btn btn-whatsapp" onclick="openModal('Cuci Bersih', 'Sofa & Mattress')">
+                    <i class="fa-solid fa-headset"></i> Dapatkan Sebut Harga
+                </button>
+                <a href="#pakej" class="btn btn-secondary" style="color: var(--white); border-color: var(--white);">
+                    Lihat Pakej Cucian
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Soalan Lazim (FAQ)</h2>
+                <p>Maklumat penting mengenai perkhidmatan CUCI BERSIH.</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Berapakah harga servis cucian?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Harga bermula dari RM50 untuk servis sofa/tilam dan RM180 untuk car seat serta karpet kereta. Harga akhir bergantung pada skop kerja, saiz atau kuantiti, serta keadaan bahan.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Adakah CUCI BERSIH datang ke rumah pelanggan?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ya, kami menyediakan servis bergerak (door-to-door) terus ke lokasi pilihan anda mengikut kawasan liputan yang disahkan.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Berapa lama proses cucian mengambil masa?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Anggaran masa kerja adalah sekitar 1 hingga 2 jam, bergantung pada jenis servis dan tahap kekotoran item.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Adakah harga RM50 meliputi keseluruhan sofa atau tilam?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Tidak. Harga RM50 adalah harga permulaan asas. Borang tempahan memerlukan maklumat saiz, kuantiti dan jenis cucian untuk pengesahan harga akhir.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Bagaimanakah saya boleh membuat tempahan?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Anda boleh mengisi borang tempahan di website ini dan menghantarnya terus melalui WhatsApp untuk semakan slot dan pengesahan.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Adakah servis tersedia untuk semua kawasan?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Kawasan liputan tertakluk pada pengesahan pihak CUCI BERSIH berdasarkan lokasi semasa anda.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Bolehkah saya memilih tarikh dan masa sendiri?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ya, anda boleh mencadangkan tarikh dan masa pilihan dalam borang tempahan, dan kami akan mengesahkan ketersediaan slot tersebut.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Adakah semua jenis fabrik sesuai untuk dicuci?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Kebanyakan fabrik dan kulit sesuai dibersihkan. Pasukan kami akan menilai keadaan bahan sebelum memulakan proses cucian.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Kolum 1: Logo, Penerangan & Media Sosial -->
+                <div class="footer-col">
+                   <div class="logo" style="color: var(--white); margin-bottom: 1rem;">
+                        <img src="logo.png" alt="Logo Cuci Bersih" class="custom-logo" style="height: 70px;">
+                    </div>
+                    <p>Servis cuci kusyen bergerak profesional untuk kereta, sofa dan tilam. Kami datang terus ke lokasi anda dengan peralatan moden dan mesra fabrik.</p>
+                    
+                    <!-- Media Sosial -->
+                    <div class="social-links" style="display: flex; gap: 0.75rem; margin-top: 1.25rem;">
+                        <a href="https://facebook.com/namapagewebanda" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style="color: var(--white); background: rgba(255,255,255,0.1); width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background 0.3s;"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/namapagewebanda" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="color: var(--white); background: rgba(255,255,255,0.1); width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background 0.3s;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://tiktok.com/@namapagewebanda" target="_blank" rel="noopener noreferrer" aria-label="TikTok" style="color: var(--white); background: rgba(255,255,255,0.1); width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background 0.3s;"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Kolum 2: Pautan Pantas -->
+                <div class="footer-col">
+                    <h4>Pautan Pantas</h4>
+                    <ul class="footer-links">
+                        <li><a href="#utama">Utama</a></li>
+                        <li><a href="#servis">Servis</a></li>
+                        <li><a href="#pakej">Pakej & Harga</a></li>
+                        <li><a href="#kelebihan">Kelebihan</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kolum 3: Servis Kami -->
+                <div class="footer-col">
+                    <h4>Servis Kami</h4>
+                    <ul class="footer-links">
+                        <li><a href="#pakej" onclick="openModal('Car Seat Deep Cleaning', 'Car Seat', 180)">Car Seat Cleaning</a></li>
+                        <li><a href="#pakej" onclick="openModal('Car Carpet Deep Cleaning', 'Car Carpet', 180)">Car Carpet Cleaning</a></li>
+                        <li><a href="#pakej" onclick="openModal('Sofa & Mattress Deep Cleaning', 'Sofa & Mattress', 50)">Sofa Cleaning</a></li>
+                        <li><a href="#pakej" onclick="openModal('Sofa & Mattress Deep Cleaning', 'Sofa & Mattress', 50)">Mattress Cleaning</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2026</span> CUCI BERSIH. Hak cipta terpelihara.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/60123456789?text=Hai%20CUCI%20BERSIH,%20saya%20berminat%20nak%20tanya%20pasal%20servis%20cucian." class="floating-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp Kami">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="tooltip">Hubungi Kami</span>
+    </a>
+
+    <div class="mobile-sticky-cta">
+        <div class="mobile-sticky-info">
+            <div class="price-label">Servis dari</div>
+            <div class="price-val">RM50</div>
+        </div>
+        <button class="btn btn-whatsapp" onclick="openModal('Sofa & Mattress Deep Cleaning', 'Sofa & Mattress')">
+            <i class="fa-solid fa-calendar-check"></i> Tempah Sekarang
+        </button>
+    </div>
+
+    <div class="modal-overlay" id="bookingModal" onclick="handleOutsideClick(event)">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 id="modalTitle">Borang Tempahan Servis</h3>
+                <button class="modal-close" onclick="closeModal()" aria-label="Tutup Modal">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="bookingForm" novalidate onsubmit="submitBooking(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="fullName">Nama Penuh *</label>
+                            <input type="text" id="fullName" class="form-control" placeholder="Cth: Ahmad bin Ali" required>
+                            <div class="error-msg">Sila masukkan nama penuh anda.</div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="phone">Nombor Telefon *</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="Cth: 0123456789" required>
+                            <div class="error-msg">Sila masukkan nombor telefon yang sah.</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="address">Alamat Servis / Lokasi *</label>
+                        <textarea id="address" class="form-control" rows="2" placeholder="No. Rumah, Jalan, Taman/Kawasan" required></textarea>
+                        <div class="error-msg">Sila masukkan alamat lengkap.</div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="postcode">Poskod *</label>
+                            <input type="text" id="postcode" class="form-control" placeholder="Cth: 43000" required>
+                            <div class="error-msg">Sila masukkan poskod.</div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="city">Bandar *</label>
+                            <input type="text" id="city" class="form-control" placeholder="Cth: Kajang" required>
+                            <div class="error-msg">Sila masukkan bandar.</div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="state">Negeri *</label>
+                            <select id="state" class="form-control" required>
+                                <option value="">Sila pilih negeri</option>
+                                <option value="Johor">Johor</option>
+                                <option value="Kedah">Kedah</option>
+                                <option value="Kelantan">Kelantan</option>
+                                <option value="Melaka">Melaka</option>
+                                <option value="Negeri Sembilan">Negeri Sembilan</option>
+                                <option value="Pahang">Pahang</option>
+                                <option value="Perak">Perak</option>
+                                <option value="Perlis">Perlis</option>
+                                <option value="Pulau Pinang">Pulau Pinang</option>
+                                <option value="Sabah">Sabah</option>
+                                <option value="Sarawak">Sarawak</option>
+                                <option value="Selangor">Selangor</option>
+                                <option value="Terengganu">Terengganu</option>
+                                <option value="W.P. Kuala Lumpur">W.P. Kuala Lumpur</option>
+                                <option value="W.P. Labuan">W.P. Labuan</option>
+                                <option value="W.P. Putrajaya">W.P. Putrajaya</option>
+                            </select>
+                            <div class="error-msg">Sila pilih negeri.</div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="serviceType">Jenis Servis *</label>
+                            <select id="serviceType" class="form-control" onchange="updateDynamicFields()" required>
+                                <option value="Car Seat">Car Seat Deep Cleaning (Bermula RM180)</option>
+                                <option value="Car Carpet">Car Carpet Deep Cleaning (Bermula RM180)</option>
+                                <option value="Sofa & Mattress">Sofa & Mattress Deep Cleaning (Bermula RM50)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="prefDate">Tarikh Pilihan *</label>
+                            <input type="date" id="prefDate" class="form-control" required>
+                            <div class="error-msg">Sila pilih tarikh servis.</div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="prefTime">Masa Pilihan *</label>
+                            <select id="prefTime" class="form-control" required>
+                                <option value="">Sila pilih slot masa</option>
+                                <option value="Pagi (9:00 AM - 12:00 T/Hari)">Pagi (9:00 AM - 12:00 T/Hari)</option>
+                                <option value="Petang (2:00 PM - 5:00 PM)">Petang (2:00 PM - 5:00 PM)</option>
+                                <option value="Malam (8:00 PM - 10:00 PM)">Malam (8:00 PM - 10:00 PM)</option>
+                            </select>
+                            <div class="error-msg">Sila pilih slot masa.</div>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Fields Container -->
+                    <div id="dynamicFieldsContainer"></div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="additionalInfo">Maklumat Tambahan (Pilihan)</label>
+                        <textarea id="additionalInfo" class="form-control" rows="2" placeholder="Cth: Kesan kotoran degil, jenis fabrik, dll."></textarea>
+                    </div>
+
+                    <div style="background-color: var(--bg-color); padding: 1rem; border-radius: 8px; margin-bottom: 1.25rem;">
+                        <div style="font-size: 0.85rem; color: var(--text-muted);">Anggaran Harga Permulaan:</div>
+                        <div id="estPriceDisplay" style="font-size: 1.25rem; font-weight: 800; color: var(--primary);">RM50</div>
+                        <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.2rem;">* Harga akhir disahkan selepas semakan butiran oleh pasukan CUCI BERSIH.</div>
+                    </div>
+
+                    <div class="modal-footer" style="padding: 0; background: none; border: none;">
+                        <button type="button" class="btn btn-secondary" onclick="closeModal()">Batal</button>
+                        <button type="submit" class="btn btn-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i> Hantar ke WhatsApp
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /* 
+         * KONFIGURASI WHATSAPP 
+         * Masukkan nombor telefon perniagaan dalam format antarabangsa tanpa simbol +, ruang atau tanda sengkang.
+         * Contoh: 60123456789 (Sila gantikan dengan nombor sebenar pemilik)
+         */
+        const WHATSAPP_NUMBER = "60123456789";
+
+        // Set Current Year in Footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburgerBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = hamburgerBtn.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        function closeMenu() {
+            navLinks.classList.remove('active');
+            const icon = hamburgerBtn.querySelector('i');
+            icon.classList.remove('fa-xmark');
+            icon.classList.add('fa-bars');
+        }
+
+        // FAQ Accordion Logic
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const questionBtn = item.querySelector('.faq-question');
+            questionBtn.addEventListener('click', () => {
+                const currentlyActive = document.querySelector('.faq-item.active');
+                if (currentlyActive && currentlyActive !== item) {
+                    currentlyActive.classList.remove('active');
+                }
+                item.classList.toggle('active');
+            });
+        });
+
+        // Modal Logic
+        const bookingModal = document.getElementById('bookingModal');
+        const serviceTypeSelect = document.getElementById('serviceType');
+        const estPriceDisplay = document.getElementById('estPriceDisplay');
+        const modalTitle = document.getElementById('modalTitle');
+
+        function openModal(packageName, serviceValue, price = 50) {
+            bookingModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            modalTitle.textContent = `Tempah: ${packageName}`;
+            
+            // Set service type dropdown
+            if (serviceValue) {
+                serviceTypeSelect.value = serviceValue;
+            }
+            updateDynamicFields();
+            
+            // Set minimum date to today
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('prefDate').min = today;
+        }
+
+        function closeModal() {
+            bookingModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function handleOutsideClick(event) {
+            if (event.target === bookingModal) {
+                closeModal();
+            }
+        }
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && bookingModal.classList.contains('active')) {
+                closeModal();
+            }
+        });
+
+        // Dynamic Form Fields based on Service Selection
+        function updateDynamicFields() {
+            const selectedVal = serviceTypeSelect.value;
+            const container = document.getElementById('dynamicFieldsContainer');
+            container.innerHTML = '';
+
+            let estPrice = 50;
+
+            if (selectedVal === 'Car Seat') {
+                estPrice = 180;
+                container.innerHTML = `
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="carType">Jenis Kenderaan *</label>
+                            <select id="carType" class="form-control" required>
+                                <option value="">Pilih jenis kenderaan</option>
+                                <option value="Sedan / Compact">Sedan / Compact</option>
+                                <option value="SUV / MPV">SUV / MPV</option>
+                                <option value="Luxury / Van">Luxury / Van</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="carModel">Model Kereta *</label>
+                            <input type="text" id="carModel" class="form-control" placeholder="Cth: Perodua Myvi" required>
+                        </div>
+                    </div>
+                `;
+            } else if (selectedVal === 'Car Carpet') {
+                estPrice = 180;
+                container.innerHTML = `
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="carType">Jenis Kenderaan *</label>
+                            <select id="carType" class="form-control" required>
+                                <option value="">Pilih jenis kenderaan</option>
+                                <option value="Sedan / Compact">Sedan / Compact</option>
+                                <option value="SUV / MPV">SUV / MPV</option>
+                                <option value="Luxury / Van">Luxury / Van</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="carModel">Model Kereta *</label>
+                            <input type="text" id="carModel" class="form-control" placeholder="Cth: Proton X50" required>
+                        </div>
+                    </div>
+                `;
+            } else if (selectedVal === 'Sofa & Mattress') {
+                estPrice = 50;
+                container.innerHTML = `
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="itemCategory">Jenis Item *</label>
+                            <select id="itemCategory" class="form-control" required>
+                                <option value="Sofa">Sofa</option>
+                                <option value="Tilam / Mattress">Tilam / Mattress</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="itemQuantity">Bilangan Unit *</label>
+                            <input type="number" id="itemQuantity" class="form-control" min="1" value="1" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="itemSize">Saiz / Keterangan Item *</label>
+                        <input type="text" id="itemSize" class="form-control" placeholder="Cth: Sofa 3 Seater / Tilam Queen" required>
+                    </div>
+                `;
+            }
+
+            estPriceDisplay.textContent = `RM${estPrice}`;
+        }
+
+        // Form Validation and WhatsApp Submission
+        function submitBooking(event) {
+            event.preventDefault();
+
+            // Validate standard required fields
+            const fullName = document.getElementById('fullName');
+            const phone = document.getElementById('phone');
+            const address = document.getElementById('address');
+            const postcode = document.getElementById('postcode');
+            const city = document.getElementById('city');
+            const state = document.getElementById('state');
+            const prefDate = document.getElementById('prefDate');
+            const prefTime = document.getElementById('prefTime');
+            const serviceType = document.getElementById('serviceType');
+            const additionalInfo = document.getElementById('additionalInfo');
+
+            let isValid = true;
+
+            [fullName, phone, address, postcode, city, state, prefDate, prefTime].forEach(field => {
+                if (!field.value.trim()) {
+                    field.classList.add('error');
+                    isValid = false;
+                } else {
+                    field.classList.remove('error');
+                }
+            });
+
+            // Validate dynamic fields if present
+            const carType = document.getElementById('carType');
+            const carModel = document.getElementById('carModel');
+            const itemCategory = document.getElementById('itemCategory');
+            const itemQuantity = document.getElementById('itemQuantity');
+            const itemSize = document.getElementById('itemSize');
+
+            if (carType && !carType.value) { carType.classList.add('error'); isValid = false; }
+            else if (carType) { carType.classList.remove('error'); }
+
+            if (carModel && !carModel.value.trim()) { carModel.classList.add('error'); isValid = false; }
+            else if (carModel) { carModel.classList.remove('error'); }
+
+            if (itemQuantity && (!itemQuantity.value || itemQuantity.value < 1)) { itemQuantity.classList.add('error'); isValid = false; }
+            else if (itemQuantity) { itemQuantity.classList.remove('error'); }
+
+            if (itemSize && !itemSize.value.trim()) { itemSize.classList.add('error'); isValid = false; }
+            else if (itemSize) { itemSize.classList.remove('error'); }
+
+            if (!isValid) {
+                return;
+            }
+
+            // Check if WhatsApp Number is configured
+            if (WHATSAPP_NUMBER === "60XXXXXXXXX" || WHATSAPP_NUMBER === "") {
+                alert("Sila tetapkan nombor WhatsApp yang sah pada fail konfigurasi.");
+                return;
+            }
+
+            // Build WhatsApp Message
+            let message = `TEMPAHAN SERVIS CUCI BERSIH\n\n`;
+            message += `Nama: ${fullName.value}\n`;
+            message += `Telefon: ${phone.value}\n`;
+            message += `Alamat servis: ${address.value}\n`;
+            message += `Poskod: ${postcode.value}\n`;
+            message += `Bandar: ${city.value}\n`;
+            message += `Negeri: ${state.value}\n`;
+            message += `Tarikh pilihan: ${prefDate.value}\n`;
+            message += `Masa pilihan: ${prefTime.value}\n`;
+            message += `Jenis servis: ${serviceType.value}\n`;
+
+            if (carType && carModel) {
+                message += `Jenis Kenderaan: ${carType.value}\n`;
+                message += `Model Kereta: ${carModel.value}\n`;
+            }
+
+            if (itemCategory && itemQuantity && itemSize) {
+                message += `Kategori Item: ${itemCategory.value}\n`;
+                message += `Kuantiti: ${itemQuantity.value}\n`;
+                message += `Saiz/Keterangan: ${itemSize.value}\n`;
+            }
+
+            message += `Harga bermula: ${estPriceDisplay.textContent}\n`;
+            message += `Maklumat tambahan: ${additionalInfo.value ? additionalInfo.value : 'Tiada'}\n\n`;
+            message += `Mohon sahkan ketersediaan slot dan harga akhir.`;
+
+            // Encode and Open WhatsApp
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+            
+            window.open(whatsappURL, '_blank');
+            closeModal();
+        }
+    </script>
+</body>
+</html>
